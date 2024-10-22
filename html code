@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file here -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Online Complaint Registration and Management System</h1>
+        <br>
+
+        <!-- User Registration Form -->
+        <div id="registrationForm" class="form-container">
+            <h3>User Registration</h3>
+            <form id="registerForm">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter a secure password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+
+        <!-- Complaint Submission Form -->
+        <div id="complaintForm" class="form-container">
+            <h3>Complaint Submission</h3>
+            <form id="submitComplaintForm">
+                <div class="mb-3">
+                    <label for="complaintName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="complaintName" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="issueDescription" class="form-label">Issue Description</label>
+                    <textarea class="form-control" id="issueDescription" rows="3" placeholder="Describe the issue in detail" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="attachment" class="form-label">Attach Files</label>
+                    <input type="file" class="form-control" id="attachment">
+                </div>
+                <button type="submit" class="btn btn-success">Submit Complaint</button>
+            </form>
+        </div>
+
+        <!-- Complaint Tracking Form -->
+        <div id="trackComplaintForm" class="form-container">
+            <h3>Track Complaint</h3>
+            <form id="trackForm">
+                <div class="mb-3">
+                    <label for="trackingID" class="form-label">Complaint ID</label>
+                    <input type="text" class="form-control" id="trackingID" placeholder="Enter your complaint ID to track" required>
+                </div>
+                <button type="submit" class="btn btn-info">Track Complaint</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Complaint Management System | All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
